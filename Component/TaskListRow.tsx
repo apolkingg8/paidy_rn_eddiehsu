@@ -5,6 +5,7 @@ import styleStore from "../store/styleStore";
 import {percent} from "csx";
 import taskStore from "../store/taskStore";
 import {useState} from "react";
+import authService from "../service/authService";
 
 interface TaskRowProps {
     task: Task
@@ -17,7 +18,13 @@ const TaskListRow = (props: TaskRowProps)=> {
         <View style={styles.wrap}>
             <Pressable
                 style={styles.textWrap}
-                onPress={()=> {
+                onPress={async ()=> {
+                    const isAuthed = await authService.ensureIsAuthed()
+
+                    if(!isAuthed) {
+                        return
+                    }
+
                     setIsEditing(true)
                 }}
             >
@@ -47,7 +54,13 @@ const TaskListRow = (props: TaskRowProps)=> {
             </Pressable>
             <Pressable
                 style={styles.button}
-                onPress={()=> {
+                onPress={async ()=> {
+                    const isAuthed = await authService.ensureIsAuthed()
+
+                    if(!isAuthed) {
+                        return
+                    }
+
                     taskStore.removeTaskById(props.task.id)
                 }}
             >

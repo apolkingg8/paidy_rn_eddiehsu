@@ -5,6 +5,7 @@ import Task from "../Klass/Task";
 import taskStore from "../store/taskStore";
 import {percent} from "csx";
 import styleStore from "../store/styleStore";
+import authService from "../service/authService";
 
 const AddTaskBar = () => {
     const [text, setText] = useState('')
@@ -24,8 +25,14 @@ const AddTaskBar = () => {
             />
             <Pressable
                 style={styles.button}
-                onPress={()=> {
+                onPress={async ()=> {
                     if(text.length === 0) {
+                        return
+                    }
+
+                    const isAuthed = await authService.ensureIsAuthed()
+
+                    if(!isAuthed) {
                         return
                     }
 
