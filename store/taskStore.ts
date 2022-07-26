@@ -9,6 +9,16 @@ export class TaskStore {
         this.tasks.unshift(newTask)
     }
 
+    updateTask = (newTask: Task)=> {
+        this.tasks = this.tasks.map((task)=> {
+            if(task.id === newTask.id) {
+                return newTask
+            }
+
+            return task
+        })
+    }
+
     removeTaskById = (id: string)=> {
         this.tasks = this.tasks.filter((task)=> {
             return task.id !== id

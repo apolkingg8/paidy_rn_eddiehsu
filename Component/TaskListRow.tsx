@@ -1,22 +1,50 @@
-import {Pressable, StyleSheet, Text, View} from "react-native";
+import {Pressable, StyleSheet, Text, TextInput, View} from "react-native";
 import {observer} from "mobx-react";
 import Task from "../Klass/Task";
 import styleStore from "../store/styleStore";
 import {percent} from "csx";
 import taskStore from "../store/taskStore";
+import {useState} from "react";
 
 interface TaskRowProps {
     task: Task
 }
 
 const TaskListRow = (props: TaskRowProps)=> {
+    const [isEditing, setIsEditing] = useState(false)
+
     return (
         <View style={styles.wrap}>
-            <View style={styles.textWrap}>
-                <Text style={styles.text}>
+            <Pressable
+                style={styles.textWrap}
+                onPress={()=> {
+                    setIsEditing(true)
+                }}
+            >
+                {isEditing ?
+                <TextInput
+                    style={styles.input}
+                    autoFocus={true}
+                    selectionColor={styleStore.palette.primary}
+                    placeholderTextColor={styleStore.palette.lightGray}
+                    placeholder={'Some simple note'}
+                    maxLength={96}
+                    onChangeText={(newText)=> {
+                        const newTask = new Task({
+                            ...props.task,
+                            text: newText,
+                        })
+                        taskStore.updateTask(newTask)
+                    }}
+                    onBlur={()=> {
+                        setIsEditing(false)
+                    }}
+                    value={props.task.text}
+                />
+                : <Text style={styles.text}>
                     {props.task.text}
-                </Text>
-            </View>
+                </Text>}
+            </Pressable>
             <Pressable
                 style={styles.button}
                 onPress={()=> {
@@ -46,10 +74,18 @@ const styles = StyleSheet.create({
     text: {
         color: styleStore.palette.white,
     },
+    input: {
+        width: percent(100),
+        height: percent(100),
+        padding: 8,
+        color: styleStore.palette.white,
+        borderWidth: 1,
+        borderColor: styleStore.palette.white,
+    },
     button: {
         ...styleStore.centerRow,
-        width: 40,
         height: percent(100),
+        paddingHorizontal: 24,
     },
     buttonText: {
         color: styleStore.palette.primary,

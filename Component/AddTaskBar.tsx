@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     input: {
         flex: 1,
         height: percent(100),
-        padding: 10,
-        color: '#fff',
+        padding: 8,
+        color: styleStore.palette.white,
         borderWidth: 1,
         borderColor: styleStore.palette.white,
     },
