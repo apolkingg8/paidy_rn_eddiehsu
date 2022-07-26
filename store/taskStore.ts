@@ -6,11 +6,13 @@ export class TaskStore {
     tasks: Task[] = []
 
     addTask = (newTask: Task)=> {
-        this.tasks.push(newTask)
+        this.tasks.unshift(newTask)
     }
 
-    removeTaskById = ()=> {
-
+    removeTaskById = (id: string)=> {
+        this.tasks = this.tasks.filter((task)=> {
+            return task.id !== id
+        })
     }
 
     constructor() {
