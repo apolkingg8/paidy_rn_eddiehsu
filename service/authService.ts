@@ -9,13 +9,14 @@ export class AuthService {
         this.isAuthed = authRes.success
     }
 
-    ensureIsAuthed = async ()=> {
+    ensureIsAuthed = async (): Promise<boolean> => {
         if(this.isAuthed) {
             return true
         }
 
         try {
-            return await this.doAuth()
+            await this.doAuth()
+            return this.isAuthed
         } catch (err) {
             alert(err)
             return false
