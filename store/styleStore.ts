@@ -1,4 +1,5 @@
 import {ViewStyle} from "react-native";
+import {makeAutoObservable} from "mobx";
 
 export class StyleStore {
     palette = {
@@ -13,6 +14,10 @@ export class StyleStore {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
+    }
+
+    constructor() {
+        makeAutoObservable(this)
     }
 }
 
