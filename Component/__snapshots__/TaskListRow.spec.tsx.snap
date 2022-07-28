@@ -1,39 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddTaskBar match snapshot 1`] = `
+exports[`TaskListRow match snapshot 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
-      "height": 40,
       "justifyContent": "center",
-      "marginBottom": 24,
-      "marginTop": 48,
+      "marginVertical": 8,
+      "minHeight": 40,
       "paddingHorizontal": 24,
       "width": "100%",
     }
   }
 >
-  <TextInput
-    maxLength={96}
-    onChangeText={[Function]}
-    placeholder="Some simple note"
-    placeholderTextColor="#959595"
-    selectionColor="#b0e55a"
-    style={
-      Object {
-        "borderColor": "#f7f7f7",
-        "borderWidth": 1,
-        "color": "#f7f7f7",
-        "flex": 1,
-        "height": "100%",
-        "padding": 8,
-      }
-    }
-    value=""
-  />
   <View
     accessible={true}
     collapsable={false}
@@ -50,57 +31,24 @@ exports[`AddTaskBar match snapshot 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#b0e55a",
         "display": "flex",
+        "flex": 1,
         "flexDirection": "row",
         "height": "100%",
-        "justifyContent": "center",
-        "marginLeft": 8,
-        "paddingHorizontal": 24,
+        "justifyContent": "flex-start",
       }
     }
   >
-    <Text>
-      ADD
+    <Text
+      style={
+        Object {
+          "color": "#f7f7f7",
+        }
+      }
+    >
+      Task1
     </Text>
   </View>
-</View>
-`;
-
-exports[`AddTaskBar render 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexDirection": "row",
-      "height": 40,
-      "justifyContent": "center",
-      "marginBottom": 24,
-      "marginTop": 48,
-      "paddingHorizontal": 24,
-      "width": "100%",
-    }
-  }
->
-  <TextInput
-    maxLength={96}
-    onChangeText={[Function]}
-    placeholder="Some simple note"
-    placeholderTextColor="#959595"
-    selectionColor="#b0e55a"
-    style={
-      Object {
-        "borderColor": "#f7f7f7",
-        "borderWidth": 1,
-        "color": "#f7f7f7",
-        "flex": 1,
-        "height": "100%",
-        "padding": 8,
-      }
-    }
-    value=""
-  />
   <View
     accessible={true}
     collapsable={false}
@@ -117,18 +65,22 @@ exports[`AddTaskBar render 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#b0e55a",
         "display": "flex",
         "flexDirection": "row",
         "height": "100%",
         "justifyContent": "center",
-        "marginLeft": 8,
         "paddingHorizontal": 24,
       }
     }
   >
-    <Text>
-      ADD
+    <Text
+      style={
+        Object {
+          "color": "#b0e55a",
+        }
+      }
+    >
+      ✕
     </Text>
   </View>
 </View>

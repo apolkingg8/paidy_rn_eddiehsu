@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskList match snapshot (empty list) 1`] = `
+<RCTScrollView
+  style={Object {}}
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginVertical": 8,
+          "minHeight": 40,
+          "paddingHorizontal": 24,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "flex-start",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#f7f7f7",
+            }
+          }
+        >
+          Task1
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b0e55a",
+            }
+          }
+        >
+          ✕
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginVertical": 8,
+          "minHeight": 40,
+          "paddingHorizontal": 24,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "flex-start",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#f7f7f7",
+            }
+          }
+        >
+          Task2
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b0e55a",
+            }
+          }
+        >
+          ✕
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`TaskList match snapshot 1`] = `
+<RCTScrollView
+  style={Object {}}
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginVertical": 8,
+          "minHeight": 40,
+          "paddingHorizontal": 24,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "flex-start",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#f7f7f7",
+            }
+          }
+        >
+          Task1
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b0e55a",
+            }
+          }
+        >
+          ✕
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginVertical": 8,
+          "minHeight": 40,
+          "paddingHorizontal": 24,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "flex-start",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#f7f7f7",
+            }
+          }
+        >
+          Task2
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": "100%",
+            "justifyContent": "center",
+            "paddingHorizontal": 24,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b0e55a",
+            }
+          }
+        >
+          ✕
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
