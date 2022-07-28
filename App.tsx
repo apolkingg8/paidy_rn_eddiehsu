@@ -1,3 +1,4 @@
+import 'react-native-get-random-values'
 import {StatusBar} from 'expo-status-bar';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import {observer} from "mobx-react";
