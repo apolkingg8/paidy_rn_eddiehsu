@@ -10,7 +10,7 @@ const App = () => {
 
     return (
         <SafeAreaView style={styles.wrap}>
-            <StatusBar style="auto"/>
+            <StatusBar style="light"/>
             <AddTaskBar/>
             <TaskList/>
         </SafeAreaView>
