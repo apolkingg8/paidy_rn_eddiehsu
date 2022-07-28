@@ -24,6 +24,11 @@ yarn run test
 * To keep it as simple as possible, it uses memory to storage tasks.
 * Before add / update / delete, the application will request for authentication. 
 * To avoid duplicate action, the authentication status will be stored.
+* For easy testing, auth status will refresh every 60 sec.
+
+## Can be better
+* Use persist storage
+* Mock `expo-local-authentication` and fully test `authService`
 
 ## Author
 [Eddie Hsu](https://github.com/apolkingg8)

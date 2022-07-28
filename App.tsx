@@ -7,7 +7,6 @@ import styleStore from "./store/styleStore";
 import TaskList from "./Component/TaskList";
 
 const App = () => {
-
     return (
         <SafeAreaView style={styles.wrap}>
             <StatusBar style="light"/>

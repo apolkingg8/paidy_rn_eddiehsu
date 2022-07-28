@@ -1,12 +1,16 @@
-import {makeAutoObservable} from "mobx";
+import {makeAutoObservable, reaction} from "mobx";
 import * as LocalAuthentication from 'expo-local-authentication';
 
 export class AuthService {
     isAuthed: boolean = false
 
+    setAuthStatus = (isAuthed: boolean)=> {
+        this.isAuthed = isAuthed
+    }
+
     doAuth = async ()=> {
         const authRes = await LocalAuthentication.authenticateAsync()
-        this.isAuthed = authRes.success
+        this.setAuthStatus(authRes.success)
     }
 
     ensureIsAuthed = async (): Promise<boolean> => {
@@ -25,6 +29,17 @@ export class AuthService {
 
     constructor() {
         makeAutoObservable(this)
+
+        // just for test
+        reaction(()=> {
+            return this.isAuthed
+        }, ()=> {
+            if(this.isAuthed) {
+                setTimeout(()=> {
+                    this.setAuthStatus(false)
+                }, 60 * 1000)
+            }
+        })
     }
 }
 
